@@ -1,0 +1,30 @@
+package authentication;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.sleep;
+
+public class PositiveTest {
+
+    @Test
+    public void signInExistUser() throws IOException {
+        Properties properties = new Properties();
+        FileInputStream input = new FileInputStream("src/main/resources/user_credentials.properties");
+        properties.load(input);
+        UsersCredentials user1 =
+                new UsersCredentials(properties.getProperty("user1.email"), properties.getProperty("user1.password"));
+        open("https://www.amazon.com/");
+        String getPageAfterSigIn = new Header().goToSigninForm()
+                .fillEmail(user1).clickContinue()
+                .fillPassword(user1).clickSigInButton()
+                .currentUrl();
+        Assert.assertEquals("https://www.amazon.com/?ref_=nav_ya_signin", getPageAfterSigIn,
+                "Current page isn`t account page");
+    }
+}
