@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
+
 
 public class PositiveTest {
 

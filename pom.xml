@@ -38,7 +38,7 @@
                     </argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>
-                        <!--                            <suiteXmlFile>${basedir}/src/test/java/lesson32/suiteForJenkins.xml</suiteXmlFile>-->
+                                                 <suiteXmlFile>${basedir}/src/test/java/authentication/testSuites/authentification.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <property>
@@ -89,7 +89,7 @@
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>6.19.0</version>
+            <version>6.18.0</version>
         </dependency>
 
         <dependency>
