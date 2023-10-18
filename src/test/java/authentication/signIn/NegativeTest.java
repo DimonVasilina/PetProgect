@@ -1,6 +1,7 @@
-package authentication;
+package authentication.signIn;
 import static com.codeborne.selenide.Selenide.open;
 
+import authentication.Header;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;

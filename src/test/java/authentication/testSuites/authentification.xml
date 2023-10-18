@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="signInExistUser" verbose="10" parallel="methods" thread-count="2">
+<suite name="authentification" verbose="10" parallel="methods" thread-count="2">
 
     <listeners>
         <listener class-name="listener1.MyListener"/>
@@ -8,13 +8,13 @@
 
     <test name="Positiv">
         <classes>
-            <class name="authentication.PositiveTest"/>
+            <class name="authentication.signIn.PositiveTest"/>
         </classes>
     </test>
 
     <test name="Negative">
         <classes>
-            <class name="authentication.NegativeTest"/>
+            <class name="authentication.signIn.NegativeTest"/>
         </classes>
     </test>
 

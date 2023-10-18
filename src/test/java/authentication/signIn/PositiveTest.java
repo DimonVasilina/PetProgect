@@ -1,5 +1,7 @@
-package authentication;
+package authentication.signIn;
 
+import authentication.Header;
+import authentication.UsersCredentials;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
