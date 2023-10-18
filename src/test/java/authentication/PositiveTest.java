@@ -1,5 +1,6 @@
 package authentication;
 
+import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,12 @@ import static com.codeborne.selenide.Selenide.sleep;
 public class PositiveTest {
 
     @Test
+    @Owner("Dmytro")
+    @Lead("Ivan")
+    @Description("Check opening user`s page after Sign in")
+    @Severity(SeverityLevel.NORMAL)
+    @Epic("New user`s page")
+    @Link(name = "requirements", url = "https://www.somerequire.com", type = "Trello")
     public void signInExistUser() throws IOException {
         Properties properties = new Properties();
         FileInputStream input = new FileInputStream("src/main/resources/user_credentials.properties");
