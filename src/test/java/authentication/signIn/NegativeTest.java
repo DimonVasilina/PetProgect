@@ -2,6 +2,7 @@ package authentication.signIn;
 import static com.codeborne.selenide.Selenide.open;
 
 import authentication.Header;
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -15,6 +16,7 @@ public class NegativeTest {
     @Epic("Registration")
     @Link(name = "requirements", url = "https://www.somerequire.com", type = "Trello")
     public void checkAlertEmptyEmail(){
+        Configuration.browser = "chrome";
         open ("https://www.amazon.com/");
         String alertEmtyEmail = new Header().goToSigninForm()
                 .clickContinue().getAlertEmptyEmail();

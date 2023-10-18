@@ -2,6 +2,7 @@ package authentication.signIn;
 
 import authentication.Header;
 import authentication.UsersCredentials;
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,6 +24,7 @@ public class PositiveTest {
     @Epic("New user`s page")
     @Link(name = "requirements", url = "https://www.somerequire.com", type = "Trello")
     public void signInExistUser() throws IOException {
+        Configuration.browser = "chrome";
         Properties properties = new Properties();
         FileInputStream input = new FileInputStream("src/main/resources/user_credentials.properties");
         properties.load(input);
