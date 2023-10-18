@@ -6,16 +6,18 @@
         <listener class-name="listener1.MyListener"/>
     </listeners>
 
+    <test name="Negative">
+        <classes>
+            <class name="authentication.signIn.NegativeTest"/>
+        </classes>
+    </test>
+
     <test name="Positiv">
         <classes>
             <class name="authentication.signIn.PositiveTest"/>
         </classes>
     </test>
 
-    <test name="Negative">
-        <classes>
-            <class name="authentication.signIn.NegativeTest"/>
-        </classes>
-    </test>
+
 
 </suite>
