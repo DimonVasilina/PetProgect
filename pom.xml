@@ -40,7 +40,7 @@
                         <suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>
                         <!--                            <suiteXmlFile>${basedir}/src/test/java/lesson32/suiteForJenkins.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
-                    <systemProperties>
+                    <systemPropertyVariables>
                         <property>
                             <name>allure.results.directory</name>
                             <value>target/allure-results</value>
@@ -49,7 +49,7 @@
                             <name>allure.link.issue.pattern</name>
                             <value>https://jira.browse/{}</value>
                         </property>
-                    </systemProperties>
+                    </systemPropertyVariables>
                 </configuration>
                 <dependencies>
                     <dependency>
