@@ -38,7 +38,7 @@
                     </argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>
-                                                 <suiteXmlFile>${basedir}/src/test/java/authentication/testSuites/authentification.xml</suiteXmlFile>-->
+                                            <!--     <suiteXmlFile>${basedir}/src/test/java/authentication/testSuites/authentification.xml</suiteXmlFile> -->
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <property>
