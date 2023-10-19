@@ -37,10 +37,9 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
                     <suiteXmlFiles>
-                            <suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>
-
-                        <!--suiteXmlFile>${basedir}/src/test/java/authentication/testSuites/authentification.xml</suiteXmlFile>-->
-</suiteXmlFiles>
+                        <suiteXmlFile>${basedir}${TEST_SUITE}.xml</suiteXmlFile>
+                        <!--                            <suiteXmlFile>${basedir}/src/test/java/lesson32/suiteForJenkins.xml</suiteXmlFile>-->
+                    </suiteXmlFiles>
 <systemPropertyVariables>
   <property>
       <name>allure.results.directory</name>
