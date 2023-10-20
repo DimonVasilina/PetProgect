@@ -2,10 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="authentification" verbose="10" parallel="methods" thread-count="2">
 
-    <listeners>
-        <listener class-name="listener1.MyListener"/>
-    </listeners>
-
     <test name="Negative">
         <classes>
             <class name="authentication.signIn.NegativeTest"/>
