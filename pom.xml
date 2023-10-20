@@ -135,5 +135,6 @@
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure-rest-assured-version}</version>
         </dependency>
+
     </dependencies>
 </project>
